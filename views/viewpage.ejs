@@ -1,0 +1,27 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Profession</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(let i=0;i < objval.length; i++) { %>
+    <tr>
+      <td><%= objval[i].name %></td>
+      <td><%= objval[i].email %></td>
+      <td><%= objval[i].age %></td>
+      <td><%= objval[i].city %></td>
+      <td><%= objval[i].profession %></td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
+<button onclick="location.href = '/user/add'">
+    Add
+</button>
+
+<!-- name, email, age, city, profession -->
