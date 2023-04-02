@@ -13,7 +13,7 @@ app.set('view engine' , ejs);
 
 app.use('/' , routes)
 
-mongoose.connect('mongodb+srv://jayasuryaj36:Surya@cluster0.opnzgjd.mongodb.net/?retryWrites=true&w=majority').then(() =>{
+mongoose.connect('process.env.DB_URL').then(() =>{
     console.log("Connected to database successfully");
 })
 
