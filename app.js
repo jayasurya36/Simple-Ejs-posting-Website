@@ -13,7 +13,7 @@ app.set('view engine' , ejs);
 
 app.use('/' , routes)
 
-mongoose.connect('process.env.DB_URL').then(() =>{
+mongoose.connect(process.env.DB_URL).then(() =>{
     console.log("Connected to database successfully");
 })
 
